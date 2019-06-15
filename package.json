@@ -1,21 +1,20 @@
 {
   "name": "oracle-cdc",
-  "version": "1.0.0",
-   "description": "Provides strong Change Data Capture capabilities for Oracle Databases",
-   "main": "lib/index.js",
-   "types": "lib/index.d.ts",
-   "scripts": {
+  "version": "1.0.1",
+  "description": "Provides strong Change Data Capture capabilities for Oracle Databases",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clearly/oracle-cdc.git"
@@ -23,9 +22,12 @@
   "files": [
     "lib/**/*"
   ],
-   "keywords": ["oracle", "cdc"],
-   "author": "clearly",
-   "license": "ISC",
+  "keywords": [
+    "oracle",
+    "cdc"
+  ],
+  "author": "clearly",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/clearly/oracle-cdc/issues"
   },
